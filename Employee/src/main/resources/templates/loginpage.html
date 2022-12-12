@@ -7,18 +7,21 @@
 <title>login</title>
 </head>
 <body>
-	<h1>Welcome Login here</h1>
+<div align="left">
+	<h1>Login here</h1>
+	</div>
 	
 	<form action="#" th:action="@{/login}" th:object="${loginUser}" method="POST">
+	<div align="justify">
 		<h2 class="title">Welcome!!</h2>
-			
-			<div class="div">
+		</div>	
+			<div class="div" align="center">
 				<input type="text" th:field="*{userName}" placeholder="Enter User Name" class="form-control mb-4 col-4">
 				<input type="text" th:field="*{password}" placeholder="Enter Password" class="form-control mb-4 col-4">
 
-			</div>
+			
 		<input type="submit" class="btn" value="Login" />
-		
+		</div>
 	</form>
 </body>
 </html>
